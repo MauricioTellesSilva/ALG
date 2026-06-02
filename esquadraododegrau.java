@@ -10,9 +10,11 @@ void main() {
 }
 
 boolean ehDregrau(int n) {
-    int digito, soma = 0;
-    while (true){
-        
+    int soma = 0;
+    int i=1;
+    while (soma < n) {
+        soma +=i;
+        i +=1;
     }
-
+    return soma == n;
 }
