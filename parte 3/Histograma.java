@@ -3,7 +3,7 @@ import java.util.Random;
 void main() {
     Random rnd = new Random();
     int[] histograma = new int[13];
-    String buffer = IO.readln("Entre com o número de rolagens");
+    String buffer = IO.readln("Entre com o número de rolagens: ");
     int numrolagens = Integer.parseInt(buffer);
     for (int i = 0; i <= numrolagens; i++) {
         int dado1 = rnd.nextInt(1, 7);
