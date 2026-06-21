@@ -5,20 +5,18 @@ void main () {
     Double Phmax=Double.parseDouble(buffer);
     buffer =IO.readln("Digite o numero de medicoes: ");
     int md=Integer.parseInt(buffer);
-    int i=1;
+    int i=0;
     int frmd=0;
-    int interacao=0;
+    Double interacao=0.0;
     while (md>i){
         buffer=IO.readln("Digite a medicao "+i+" :");
-        interacao=Integer.parseInt(buffer);
+        interacao=Double.parseDouble(buffer);
         if (interacao>Phmax){
-
+            frmd+=1;
         } else if (interacao<Phmn){
-
-        } else {
-            
-        }
+            frmd+=1;
+        } 
+        i++;
     }
-
-
+    IO.println("Medicoes fora da faixa: "+frmd);
 }
