@@ -5,7 +5,6 @@ void main() {
     IO.println(soma);
 }
 int SomaDigitos(int n){
-    int resto=0;
     int s=0;
     int soma=0;
     while (n>0){
