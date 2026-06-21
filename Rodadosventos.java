@@ -5,8 +5,6 @@ void main(){
     angulo=angulo-(voltas*360);
     int dir=angulo/45;
     String Ndir= "";
-    IO.println(angulo);
-    IO.println(dir);
     switch(dir) {
         case 0:
             Ndir="N";
