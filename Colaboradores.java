@@ -10,6 +10,7 @@ void main() {
       horas=Double.parseDouble(buffer);
       pagamento=salario*horas;
       total= total+pagamento;
+      i++;
     }
     IO.println("total pago:"+total);
 }
