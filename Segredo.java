@@ -9,13 +9,11 @@ void main() {
         i++;
         buffer=IO.readln("Digite um numero inteiro de 1 a 100: ");
         tentativa=Integer.parseInt(buffer);
-        if (tentativa > segredo);{
-            IO.println("O numero e menor");
-        }
-        if (tentativa < segredo) {
-            IO.println("O numero e maior");
-        }
-        else  {
+         if (segredo > tentativa) {
+            IO.println("O segredo é maior");
+        } else if (segredo < tentativa) {
+            IO.println("O segredo é menor");
+        } else {
             acertou=true;
         }
     }
